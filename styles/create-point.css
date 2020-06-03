@@ -1,0 +1,110 @@
+#page-create-point {
+  width: 90%;
+  max-width: 1100px; /*Limitando largura da caixa*/
+  /*Alinhamento de caixa (pelo lado de fora da caixa)*/
+  margin: 0 auto; /*Em cima e baixo sendo 0 e aos lados preenchidos automático*/
+}
+
+#page-create-point header {
+  display: flex;
+  justify-content: space-between; /*Espaçamento entre elemtnos, cada um no canto*/
+  align-items: center; /*Alinhando*/
+  margin-top: 48px;
+}
+
+#page-create-point header a {
+  color: var(--title-color); /*Referenciando cor que está no main.css*/
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+#page-create-point header a span {
+  background-image: url(../assets/arrow-left.svg);
+  width: 20px;
+  height: 24px;
+  display: flex;
+  margin-right: 16px;
+}
+
+form {
+  background: white;
+  padding: 64px; /*Preenchimento interno*/
+  border-radius: 8px;
+  max-width: 730px; /*Largura máxima*/
+  margin: 80px auto;
+}
+
+form h1 {
+  font-size: 36px;
+}
+
+form fieldset {
+  margin-top: 64px;
+  border: 0;
+}
+
+form legend {
+  margin-bottom: 40px;
+}
+
+form legend h2 {
+  font-size: 24px;
+}
+
+form .field {
+  flex: 1; /*Preenchimento automático dos elementos*/
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+form .field-group {
+  display: flex;
+  
+}
+
+form input, form select {
+  background-color: #F0F0F5;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  /*outline: none; Retirando marcação de selecionado do input*/
+}
+
+form select {
+  /*Resentando campos do browsers*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/*Pegando field que está seguido de outro field
+Está referenciando ao campo número e cidade */
+form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+form button {
+  width: 260px;
+  height: 56px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  margin-top: 40px;
+  /*Informando que transição deve ser aplicada no background*/
+  transition: background-color 400ms;
+}
+
+form button:hover {
+  background-color: #2fb86e;
+}
