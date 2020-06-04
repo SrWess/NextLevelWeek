@@ -108,3 +108,53 @@ form button {
 form button:hover {
   background-color: #2fb86e;
 }
+
+/*Estilização Itens de coleta*/
+.items-grid {
+  /*Utilizando grid para construir 3 colunas e 2 linhas*/
+  display: grid;
+  /*Construindo 3 columas de forma flexivel
+  1fr fará calculo para sempre encaixar 3 colunas no local*/
+  grid-template-columns: 1fr 1fr 1fr;
+  /*Espacamento entre elementos*/
+  gap: 16px;
+}
+
+.items-grid li {
+  background-color: #F5F5F5;
+  list-style: none;
+  border: 2px solid #F5F5F5;
+  border-radius: 8px;
+  height: 180px;
+  /*  32px topo - 24px laterais - 16px baixo*/
+  padding: 32px 24px 16px;
+  /*Alinhamento*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*De acordo com o fluxo coloca elemento de cima pra baixo*/
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+.items-grid li span {
+  /*Realizando preenchimento automático*/
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+  margin-top: 12px;
+}
+
+/*Procurando li que possui classe selected*/
+.items-grid li.selected {
+  background: #e1faec;
+  border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+  /*Retirando eventos de pointer*/
+  pointer-events: none;
+}
