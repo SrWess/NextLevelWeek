@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% block title %}
+  <!--Title padrão, caso não ache um title no index.html será utilizado esse padrão-->
+    <title>Ecoleta</title>
+  {% endblock title %}
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <!-- Será substituido pelo mesmo bloco do index.html --> 
+  {% block styles %} 
+  {% endblock styles %}
+
+  <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+<body>
+
+  <!-- Pegando varíavel no Id -->
+  <div id="{{ pageId }}">
+  {% block content %}
+  {% endblock content %}
+  </div>
+
+  {% block modal %}
+  {% endblock modal %}
+
+
+  {% block scripts %}
+  {% endblock scripts %}
+</body>
+</html>
