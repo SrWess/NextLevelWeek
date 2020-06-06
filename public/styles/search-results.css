@@ -1,13 +1,23 @@
+body {
+  background-color: white;
+}
+
 /*Criação de um pseudo elemento no body*/
 body::after {
   content: '';
-  position: fixed;
-  background: white;
-  /*Esticando o fixed na página inteira*/
-  top: 260px;
+  position: absolute;
+  background: #F0F0F5;
+  /*Esticando o body na página inteira*/
+  top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  /*REM - É medido pelo elemento root
+
+  Conforme página muda o tamanho o root element é mudado, 
+  o REM também realiza mudança
+  */
+  height: 16rem;
   /*Colocando para ficar por baixo do body*/
   z-index: -1;
 }
