@@ -12,7 +12,7 @@
 
   #page-home header a {
     position: absolute;
-    bottom: 48px;
+    bottom: 18px;
 
     /*Realizando alinhamento*/
     left: 50%;
@@ -21,6 +21,32 @@
 
   #page-home main {
     align-items: center;
+  }
+
+  #page-home main h1 {
+    font-size: 46px;
+  }
+
+  #page-home main p {
+    font-size: 20px;
+  }
+
+  #page-home main a {
+    height: 62px;
+  }
+
+  #page-home main a span {
+    width: 62px;
+    height: 62px;
+  }
+
+  #modal .content {
+    width: 320px;
+  }
+
+  #modal form button {
+    width: 62px;
+    height: 62px;
   }
 
   #page-search-results .cards {
