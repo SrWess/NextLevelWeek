@@ -74,7 +74,7 @@ server.post("/savepoint", (req, res) => {
   
   //Inserir na tabela places (os cammos) valores (os valores)
   const query = `
-    INSERT INTO places (
+    INSERT INT places (
       image,
       name,
       address,
@@ -98,7 +98,7 @@ server.post("/savepoint", (req, res) => {
   function afterInsertDate(err) {
     //Err - verificando para evitar erro
     if(err) {
-      return res.send("Erro no cadastro")
+      return res.render("create-point.html", {saved : false})
     }
 
     //Caso não tenha erro irá executar
