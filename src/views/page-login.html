@@ -1,0 +1,49 @@
+<!-- Utilizando layout padrão Layout.html é utilizado como base para colocar conteúdo da página index -->
+{% extends "layout.html" %}
+
+{% set pageId = "page-login" %}
+
+{% block title %}
+  <title>Login Ecoleta</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/page-login.css">
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/page-header.html" %}
+
+  <form action="">
+    <h1>Ecoleta - Login</h1>
+
+    <fieldset>
+      <legend>
+        <h4>Para continuar faça o login utilizando seu e-mail cadastrado</h4>
+      </legend>
+
+      <div class="field">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" required="required">
+      </div>
+
+      <div class="field">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" required="required">
+      </div>
+
+
+    
+      <div class="lembrarme">
+        <input type="checkbox" name="lembrar">
+        <label for="lembrar">Lembrar-me</label>
+      </div>
+
+    <div class="botao-acessar">
+      <button type="submit">Acessar</button>
+    </div>
+    
+    </fieldset>
+
+  </form>
+{% endblock content %}
