@@ -14,7 +14,7 @@ module.exports = db
 
 //Utilizar o objeto de banco de dados para nossa operações
 //Seriealize > Informa que irá executar uma sequencia de código
-db.serialize(() => {
+//db.serialize(() => {
   //Utilizando comandos SQL:
 
   //1 Criar uma tabela para o Banco de dados
@@ -93,7 +93,7 @@ db.serialize(() => {
 
   //4 Deletar um dado da tabela
   //Deletando registro onde o ID é igual a 1
-  // db.run(`DELETE FROM places WHERE id = ?`, [3], function(err) {
+  // db.run(`DELETE FROM places WHERE id = ?`, [0], function(err) {
   //   if(err) {
   //     //Verificando o erro
   //     return console.log(err) 
@@ -103,6 +103,6 @@ db.serialize(() => {
   //   console.log('Registro deletado com sucesso!');
     
   // }) 
-});
+//});
 
 
