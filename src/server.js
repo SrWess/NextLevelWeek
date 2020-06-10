@@ -154,5 +154,9 @@ server.get("/search", (req, res) => {
   
 })
 
+server.get("/login", (req, res) => {
+  return res.render("page-login.html")
+})
+
 //Ligando o servidor
 server.listen(3000)
