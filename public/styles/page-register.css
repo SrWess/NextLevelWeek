@@ -1,0 +1,105 @@
+#page-register {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-register header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#page-register header a {
+  color: var(--title-color);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+#page-register header a span {
+  background-image: url(../assets/arrow-left.svg);
+  width: 20px;
+  height: 24px;
+  display: flex;
+  margin-right: 16px;
+}
+
+form {
+  background: white;
+  padding: 64px;
+  border-radius: 8px;
+  max-width: 730px;
+  margin: 80px auto;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
+form h1 {
+  font-size: 36px;
+}
+
+form h5 {
+  color: #8e8e8e;
+  font-size: 22px;
+}
+
+form fieldset {
+  margin-top: 54px;
+  border: 0;
+}
+
+form legend {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+form .field-group {
+  display: flex;
+}
+
+form input {
+  background: #F0F0F5;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+form button {
+  width: 260px;
+  height: 56px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  margin-top: 40px;
+  transition: backgrond-color 400ms;
+}
+
+form button:hover {
+  background-color: #2fb86e;
+}

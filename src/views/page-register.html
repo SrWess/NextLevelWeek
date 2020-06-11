@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-register" %}
+
+{% block title %}
+  <title>Cadastro Ecoleta</title>
+{% endblock title %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/styles/page-register.css">
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/page-header.html" %}
+
+  <form action="">
+    <h1>Cadastro</h1>
+
+    <fieldset>
+      <legend>
+        <h5>Informe seus dados para concluir cadastro</h5>
+      </legend>
+
+      <div class="field">
+        <label for="nomeCompleto">Nome completo</label>
+        <input type="text" name="nomeCompleto" required="required">
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="dataNasc">Data de Nascimento</label>
+          <input type="date" name="dataNasc" required="required">
+        </div>
+        <div class="field inputRadio">
+          <label><input type="radio" name="genero" class="teste">Masculino</label>
+          <label><input type="radio" name="genero" class="teste">Masculino</label>
+          <label><input type="radio" name="genero" class="teste">Masculino</label>        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="text" name="email" required="required">
+        </div>
+        <div class="field">
+          <label for="senha">Senha</label>
+          <input type="text" name="senha" required="required">
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="celular">Celular</label>
+          <input type="text" name="celular" required="required">
+        </div>
+        <div class="field">
+          <label for="telFixo">Telefone Fixo</label>
+          <input type="text" name="telFixo">
+        </div>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </fieldset>
+
+  </form>
+{% endblock content %}
