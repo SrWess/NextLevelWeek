@@ -24,12 +24,81 @@
 
       <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
 
-      <a href="#">
+      <a href="#" id="pontos">
         <span></span>
         <strong>Pesquisar pontos de coleta</strong>
       </a>
+
+      <a href="#" id="duvida">
+        <span><img src="/assets/quest.svg" alt=""></span>
+        <strong>Entender nosso trabalho</strong>
+      </a>
     </main>
+
+    <div class="info-trabalho">
+      <h2>Entenda como trabalhamos</h2>
+
+      <p>
+        Nossa plataforma tem como propósito fornecer um espaço para realizar cadastramento dos pontos de coleta.
+      </p>
+
+      <p>
+        Realizamos a busca dos pontos que possui em sua cidade para você poder realizar o
+        <strong>descarte de forma correta e consciente &#128516;</strong>
+      </p>
+      <ul>
+        <p>Os passos que realizamos no cadastramento:</p>
+        <li><img src="/assets/correct.svg" alt="" class="icon-li">Dados do responsável pelo cadastro</li>
+        <li><img src="/assets/correct.svg" alt="" class="icon-li">Verificação dos dados</li>
+        <li><img src="/assets/correct.svg" alt="" class="icon-li">Analise do local que será cadastrado</li>
+        <li><img src="/assets/correct.svg" alt="" class="icon-li">Ponto cadastrado com sucesso</li>
+
+      </ul>
+    </div>
+
+    <div class="info-ecoleta">
+      <h2>Quais são os tipos de resídos?</h2>
+      <p id="descricao-ecoleta">
+        Aqui na
+        <strong>Ecoleta</strong>
+        você pode cadastrar pontos de coleta que trabalha com os seguintes tipos de resídos
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h1>Lâmpadas</h1>
+        </div>
+
+        <div class="card">
+          {# <img src="" alt=""> #}
+          <h1>Pilhas e Baterias</h1>
+        </div>
+
+        <div class="card">
+          {# <img src="" alt=""> #}
+          <h1>Papéis e Papelão</h1>
+        </div>
+
+        <div class="card">
+          <h1>Eletrônicos</h1>
+        </div>
+
+        <div class="card">
+          {# <img src="" alt=""> #}
+          <h1>Orgânicos</h1>
+        </div>
+
+        <div class="card">
+          {# <img src="" alt=""> #}
+          <h1>Óleo de Cozinha</h1>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 {% endblock content %}
 
 {% block modal %}
@@ -39,4 +108,3 @@
 {% block scripts %}
   <script src="/scripts/index.js"></script>
 {% endblock scripts %}
-
