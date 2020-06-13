@@ -21,21 +21,48 @@
         <h5>Informe seus dados para concluir cadastro</h5>
       </legend>
 
-      <div class="field">
-        <label for="nomeCompleto">Nome completo</label>
-        <input type="text" name="nomeCompleto" required="required">
+      <div class="field-group">
+        <div class="field">
+          <label for="nomeCompleto">Nome completo</label>
+          <input type="text" name="nomeCompleto" required="required">
+        </div>
+        <div class="field">
+          <label for="dataNasc">Data de Nascimento</label>
+          <input type="text" name="dataNasc" placeholder="dd/mm/aaaa" required="required">
+        </div>
       </div>
 
       <div class="field-group">
         <div class="field">
-          <label for="dataNasc">Data de Nascimento</label>
-          <input type="date" name="dataNasc" required="required">
+          <label for="rgUsuario">RG</label>
+          <input type="text" name="rgUsuario" placeholder="Somente os números" required="required">
         </div>
-        <div class="field inputRadio">
-          <label><input type="radio" name="genero" class="teste">Masculino</label>
-          <label><input type="radio" name="genero" class="teste">Masculino</label>
-          <label><input type="radio" name="genero" class="teste">Masculino</label>        </div>
+        <div class="field">
+          <label for="cpfUsuario">CPF</label>
+          <input type="text" name="cpfUsuario" placeholder="Somente os números" required="required">
+        </div>
       </div>
+
+      <div class="field">
+        <p>Sexo</p>
+        <div class="genero">
+
+          <label class="radio">
+            <input type="radio" name="sexo" value="Masculino">
+            Masculino
+          </label>
+          <label class="radio">
+            <input type="radio" name="sexo" value="Feminino">
+            Feminino
+          </label>
+          <label class="radio">
+            <input type="radio" name="sexo" value="Outro">
+            Outro
+          </label>
+        </div>
+      </div>
+
+      <hr class="lineForm">
 
       <div class="field-group">
         <div class="field">
@@ -52,6 +79,9 @@
         <div class="field">
           <label for="celular">Celular</label>
           <input type="text" name="celular" required="required">
+          <label class="checkbox-whatsApp">
+            <input type="checkbox" value="Sim">Esse número é do WhatsApp
+          </label>
         </div>
         <div class="field">
           <label for="telFixo">Telefone Fixo</label>
@@ -59,6 +89,9 @@
         </div>
       </div>
 
+      <label class="checkbox-termos">
+        <input type="checkbox" value="Sim"><strong>Eu concordo com os<a href="#">Termos de Uso *</a></strong>
+      </label>
       <button type="submit">Cadastrar</button>
     </fieldset>
 
