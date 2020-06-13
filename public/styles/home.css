@@ -1,5 +1,5 @@
 #page-home {
-  height: 110vh; 
+  /*height: 110vh; */
   background: url('../assets/home-background.svg') no-repeat;
   background-position: 35vw bottom; /*Colocando posição na largura no bottom*/
 }
@@ -9,7 +9,7 @@
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  height: 100%;
+  /*height: 100%;*/
   flex-direction: column;
 }
 
@@ -52,7 +52,7 @@
   margin-top: 24px;
 }
 
-#page-home main a {
+#pontos {
   width: 100%;
   max-width: 360px;
   height: 72px;
@@ -65,7 +65,7 @@
 
 }
 
-#page-home main a:hover {
+#pontos:hover {
   background-color: #2fb86e;
 }
 
@@ -80,7 +80,7 @@
   justify-content: center;
 }
 
-#page-home main a span::after {
+#pontos span::after {
   content: '';
   background-image: url(../assets/search.svg);
   width: 20px;
@@ -88,8 +88,156 @@
   
 }
 
-#page-home main a strong {
+#pontos strong {
   color: white;
   flex: 1;
   text-align: center;
 }
+
+
+#duvida {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  background: #f0f0f0;
+  border: 1px solid #dddde2;
+  transition: 400ms;
+}
+
+#duvida span::after {
+  content: '';
+  background-image: url(../assets/question.svg);
+  width: 20px;
+  height: 20px;
+}
+
+#duvida:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+#duvida strong {
+  color: #696969;
+  flex: 1;
+  text-align: center;
+}
+
+.info-trabalho {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(180px);
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+
+}
+
+.info-trabalho h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.info-trabalho p {
+  color: #525252;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+
+}
+
+.info-trabalho ul {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.info-trabalho ul p {
+  text-align: start;
+  font-size: 20px;
+  color: #363636;
+  font-weight: bold;
+}
+
+.info-trabalho ul li {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+}
+
+.info-trabalho ul li img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 20px;
+}
+
+.info-ecoleta {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(200px);
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.info-ecoleta h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+#descricao-ecoleta {
+  color: #525252;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.card {
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  transition: 400ms;
+}
+
+.card:hover {
+  background-color: #f7f7fa;
+}
+
+.card h1 {
+  font-size: 26px;
+  line-height: 41px;
+  color: var(--primary-color);
+  padding: 20px;
+  /* margin-top: 28px; */
+}
+
+/* .card h3 {
+  margin: 24px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: var(--primary-color);
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C6C80;
+  margin-bottom: 25px;
+} */
