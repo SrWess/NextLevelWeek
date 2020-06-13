@@ -2,7 +2,12 @@
 
 @media (max-width: 900px) {
   #page-home {
-    background-position-x: 70vw;
+    background-image: none;
+    /* background-position-x: 70vw; */
+  }
+
+  #page-home header {
+    display: inline;
   }
 
   #page-home .content {
@@ -12,14 +17,14 @@
 
   #page-home header a {
     position: absolute;
-    bottom: 18px;
-
+    margin-top: 30px;
     /*Realizando alinhamento*/
     left: 50%;
     transform: translateX(-50%);
   }
 
   #page-home main {
+    margin-top: 68px;
     align-items: center;
   }
 
@@ -57,16 +62,24 @@
     height: 200px;
   }
 
-  #page-create-point .field-group {
+  #page-create-point .field-group,
+  #page-register .field-group{
     flex-direction: column;
   }
 
-  #page-create-point .field-group .field + .field {
+  #page-create-point .field-group .field + .field,
+  #page-register .field-group .field + .field {
     margin-left: 0;
+  }
+
+  .info-trabalho,
+  .info-ecoleta {
+    transform: translateY(100px);
   }
 }
 
 /*De 1700px pra cima aplicar essas regras*/
+/*Quando tela for maior que 1700px será aplicado essas condiçoes*/
 @media (min-width: 1700px) {
   #page-home {
     background-position-x: 40vw;
@@ -85,3 +98,38 @@ Quando chegar em 760px a imagem irá ficar fixada
 /*
 Sugestão: Limitar imagem para não ficar mexendo conforme crescimento
 */
+
+/*Enquanto resolução tiver até 768px será aplicado*/
+@media (max-width: 768px) {
+  .info-trabalho ul {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .info-trabalho ul p {
+    text-align: center;
+  }
+
+  .info-coleta {
+    width: 100%;
+  }
+
+  .cards, .items-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  form legend {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 578px) {
+
+  .cards, .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 530px) {
+
+}
