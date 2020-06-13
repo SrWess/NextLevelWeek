@@ -45,7 +45,7 @@ form h5 {
 }
 
 form fieldset {
-  margin-top: 54px;
+  margin-top: 34px;
   border: 0;
 }
 
@@ -64,8 +64,22 @@ form .field {
   margin-bottom: 24px;
 }
 
+form .field span {
+  font-size: 14px;
+  justify-content: space-between;
+}
+
 form .field-group {
   display: flex;
+}
+
+form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 form input {
@@ -76,15 +90,49 @@ form input {
   border-radius: 8px;
 }
 
+.lineForm {
+  width: 100%;
+  border: 2px solid #F0F0F5;
+  margin-bottom: 35px;
 
+}
 
-form label {
-  font-size: 14px;
+.genero {
+  width: 289px;
+  margin-bottom: 15px;
+  background: #F0F0F5;
+  border: 0;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.field p {
   margin-bottom: 8px;
 }
 
-form .field-group .field + .field {
-  margin-left: 24px;
+.radio {
+  margin-right: 15px;
+}
+
+.checkbox-whatsApp {
+  margin-top: 15px;
+}
+
+.checkbox-termos {
+  display: flex;
+  margin-top: 20px;
+  width: 290px;
+}
+
+.checkbox-whatsApp input[type="checkbox"],
+.checkbox-termos input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-termos a{
+  text-decoration: none;
+  margin-left: 5px;
+  color: var(--primary-color);
 }
 
 form button {
@@ -96,7 +144,7 @@ form button {
   font-weight: bold;
   font-size: 16px;
   border: 0;
-  margin-top: 40px;
+  margin-top: 10px;
   transition: backgrond-color 400ms;
 }
 
